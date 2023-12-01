@@ -25,6 +25,10 @@ app.use("/*", handleNotFound);
 
 app.use(errorHandler);
 
+app.get("/",(req,res)=>{
+  res.json({message:"sucessful"})
+})
+
 // app.post("/sign-in",
 //   (req, res, next) => {
 //     const { email, password } = req.body
